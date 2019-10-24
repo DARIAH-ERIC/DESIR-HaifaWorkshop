@@ -61,3 +61,7 @@ tei-opener::after {
   /* content: '\A\A';
   white-space: pre; */
 }
+
+tei-opener > tei-title {
+  display: none;
+}
