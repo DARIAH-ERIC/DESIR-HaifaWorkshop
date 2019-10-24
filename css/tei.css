@@ -1,0 +1,63 @@
+
+tei-div {
+  display: block;
+}
+tei-p {
+  display: block;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+tei-list[type=simple] {
+  list-style-type: none;
+}
+tei-list[type=simple]>tei-item {
+  display: list-item;
+}
+
+tei-hi[rend=italics] {
+  font-style: italic;
+}
+
+tei-body tei-placeName, tei-body tei-placeName a {
+  color:#ff4000;
+}
+
+tei-body tei-placeName a:hover {
+  color: white;
+  background: #ff4000;
+  text-decoration: none;
+}
+
+tei-body tei-persName, tei-body tei-persName a {
+  color:#00bfff;
+}
+
+tei-body tei-persName a:hover {
+  color: white;
+  background: #00bfff;
+  text-decoration: none;
+}
+
+
+
+.sic {
+  border-bottom: 1px dashed;
+}
+
+.abbr {
+  border-bottom: 1px dotted;
+}
+
+tei-salute {
+  display: block;
+}
+
+tei-salute:before {
+  content: '\A';
+  white-space: pre;
+}
+
+tei-opener::after {
+  /* content: '\A\A';
+  white-space: pre; */
+}
